@@ -1,0 +1,133 @@
+@import "partials/variables";
+
+@import "partials/typography";
+
+body {
+	font-family: $serif;
+	width: 100%;
+	margin: 0;
+}
+
+#inner-content {
+	max-width: 1000px;
+	margin: 0 auto !important;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	margin: 2rem;
+}
+
+p {
+	text-align: center;
+	font-size: 25px;
+	margin: .5rem;
+
+	@media(#{$mobile_only}) {
+		font-size: 16px;
+
+	}
+
+	@media(#{$tablet}) {
+		font-size: 22px;
+	}
+}
+
+p#p1 {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+#flex {
+	display: flex;
+	justify-content: center;
+}
+
+p#explain {
+	width: 45%;
+	min-width: 275px;
+	max-width: 300px;
+	margin: 0 auto;
+
+	@media(#{$tablet}) {
+		min-width: 375px;
+	}
+
+	@media(#{$desktop}) {
+		min-width: 375px;
+		white-space: nowrap;
+		white-space: -moz-pre-wrap; /* Firefox */
+		white-space: -o-pre-wrap; /* Opera */
+		white-space: pre-wrap; /* Chrome */
+		word-wrap: break-word; /* IE */
+	}
+}
+
+.article-header {
+	position:relative;
+}
+
+#main-video {
+	margin-bottom:$spacer;
+	display: flex;
+	justify-content: center;
+}
+
+.main-video-poster {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:990;
+	margin: 0 auto;
+
+	img {
+		width:100%;
+		height:auto;
+	}
+}
+
+#slx-play {
+	margin: auto;
+	height:100%;
+	width:100%;
+	display: block;
+	background-image:url('../images/play.svg');
+	background-repeat:no-repeat;
+	background-position:center;
+	position:absolute;
+	top:0;
+	left:0;
+	background-size:15% auto;
+	opacity:0.75;
+	cursor:pointer;
+	background-color:rgba(255,255,255,0.0);
+	z-index:992;
+	transition: background-color 0.5s, opacity 0.5s, background-size 0.5s;
+
+}
+
+#slx-play:hover {
+	opacity:1.0;
+	background-color:rgba(255,255,255,0.4);
+	transition: background-color 0.5s, opacity 0.5s, background-size 0.5s;
+	background-size:20% auto;
+}
+
+//Responsive Video Embeds
+.video-container {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 50%; 
+	
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			//height: 100%; //Set back to 100% ************
+		}
+}

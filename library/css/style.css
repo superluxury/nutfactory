@@ -1,0 +1,215 @@
+/******************************************************************
+Site Name: Superlux
+Author: Superlux
+Stylesheet: Variables
+******************************************************************/
+/*********************
+COLORS
+*********************/
+/*********************
+SPACERS
+*********************/
+/*********************
+MEDIA QUERY SIZES
+*********************/
+/******************************************************************
+Site Name: Superlux
+Author: Superlux
+Stylesheet: Typography
+******************************************************************/
+/******************************************************************
+FONT FILE LOCATIONS
+******************************************************************/
+/* Klinic Slab */
+/* Klinic Slab */
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabMedium.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabMediumIt.otf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabLight.otf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabLightIt.otf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabBold.otf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url("../fonts/klinic_slab/KlinicSlabBoldIt.otf");
+  font-weight: bold;
+  font-style: italic; }
+
+/******************************************************************
+FONT VARIABLES
+******************************************************************/
+/******************************************************************
+TYPE SETTINGS
+******************************************************************/
+html, body {
+  font-family: "Klinic Slab", "Georgia", Times New Roman, Times, serif;
+  color: #000; }
+  @media (min-width: 1024px) {
+    html, body {
+      font-size: 1.1rem; } }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Klinic Slab", "Georgia", Times New Roman, Times, serif; }
+
+a {
+  background: #ffff00;
+  color: #000;
+  text-decoration: none; }
+  a:hover {
+    background: #ffffb3;
+    text-decoration: underline; }
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  /*
+	// enabling fancy ligatures when available
+	-webkit-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+	*/ }
+
+body {
+  font-family: "Klinic Slab", "Georgia", Times New Roman, Times, serif;
+  width: 100%;
+  margin: 0; }
+
+#inner-content {
+  max-width: 1000px;
+  margin: 0 auto !important; }
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 2rem; }
+
+p {
+  text-align: center;
+  font-size: 25px;
+  margin: .5rem; }
+  @media (max-width: 1023px) {
+    p {
+      font-size: 16px; } }
+  @media (min-width: 640px) {
+    p {
+      font-size: 22px; } }
+
+p#p1 {
+  margin-top: 2rem;
+  text-align: center; }
+
+#flex {
+  display: flex;
+  justify-content: center; }
+
+p#explain {
+  width: 45%;
+  min-width: 275px;
+  max-width: 300px;
+  margin: 0 auto; }
+  @media (min-width: 640px) {
+    p#explain {
+      min-width: 375px; } }
+  @media (min-width: 1024px) {
+    p#explain {
+      min-width: 375px;
+      white-space: nowrap;
+      white-space: -moz-pre-wrap;
+      /* Firefox */
+      white-space: -o-pre-wrap;
+      /* Opera */
+      white-space: pre-wrap;
+      /* Chrome */
+      word-wrap: break-word;
+      /* IE */ } }
+
+.article-header {
+  position: relative; }
+
+#main-video {
+  margin-bottom: 0.5625rem;
+  display: flex;
+  justify-content: center; }
+
+.main-video-poster {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 990;
+  margin: 0 auto; }
+  .main-video-poster img {
+    width: 100%;
+    height: auto; }
+
+#slx-play {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: url("../images/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 15% auto;
+  opacity: 0.75;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 992;
+  transition: background-color 0.5s, opacity 0.5s, background-size 0.5s; }
+
+#slx-play:hover {
+  opacity: 1.0;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.5s, opacity 0.5s, background-size 0.5s;
+  background-size: 20% auto; }
+
+.video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%; }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }

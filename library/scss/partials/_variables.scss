@@ -1,0 +1,56 @@
+/******************************************************************
+Site Name: Superlux
+Author: Superlux
+Stylesheet: Variables
+******************************************************************/
+
+/*********************
+COLORS
+*********************/
+
+//$slx-yellow: #faed34;
+$slx-yellow: #ffff00;
+$slx-grey: darken(#808080, 5%);
+$slx-light-grey: lighten($slx-grey, 50%);
+$link-hover: lighten($slx-yellow, 35%);
+$link-color: $slx-yellow;
+
+
+
+
+
+
+/*********************
+SPACERS
+*********************/
+
+$spacer: 0.5625rem;
+$spacer_half: 0.28125rem;
+$spacer_qtr: 0.140625rem;
+$spacer_large: 1rem;
+$spacer_xlarge: 2rem;
+$spacer_xxlarge: 4rem;
+
+
+
+
+
+
+/*********************
+MEDIA QUERY SIZES
+*********************/
+
+$base_size: 320px;
+
+$tablet_size: 640px;
+$tablet: 'min-width: #{$tablet_size}';
+
+$desktop_size: 1024px;
+$desktop: 'min-width: #{$desktop_size}';
+
+$max_size: 1200px;
+$max: 'min-width: #{$max_size}';
+
+$base_only: 'max-width: #{$tablet_size - 1}';
+$mobile_only: 'max-width: #{$desktop_size - 1}';
+$tablet_only: '#{$tablet}) and (#{$mobile_only}';
