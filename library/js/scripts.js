@@ -48,7 +48,7 @@ if ((is_chrome)&&(is_opera)) {is_chrome=false;}
 
 //Check to see if it's a mobile device and/or if it's playing in Safari browser
 if (isMobile.any()) {
-	$("#slx-play").attr("href", "http://www.youtube.com/watch?v=Q5rImLpatBI");
+	$("#slx-play").attr("href", "https://www.youtube.com/watch?v=Uh5NB11LP2Y");
 } else if (is_safari) {
 	$("#slx-play").attr("href", "#");
 	$("#explain").html("Oh! It looks like you're using Safari! <br>360 and Safari don't get along. <br>It's like Bette Davis and Joan Crawford. Try a friendlier browser like Chrome, <br>Firefox, Opera or even Internet Explorer <br>(I know, we were surprised too!).");
